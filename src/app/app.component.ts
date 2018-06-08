@@ -37,6 +37,10 @@ export class AppComponent implements OnInit{
   *  Add a todo
   */
   addToDo(label): void {
+    if(label == ''){
+      label = 'N/A';
+    }
+
     this.isLoading = true;
     setTimeout(()=>{   
       let priority: number = this.todos.length;

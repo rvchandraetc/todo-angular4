@@ -11,7 +11,8 @@ export class TodoService {
 
     todos: Todo[] = [
         { label: 'Get Up Early', done: false, priority: 1 },
-        { label: 'Do Break Fast', done: false, priority: 2 },
+        { label: 'Read Java', done: false, priority: 2 },
+        { label: 'Attend Java Interview', done: false, priority: 3 },
     ]
 
      getTodoList() {
