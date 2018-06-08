@@ -1,0 +1,21 @@
+import { Injectable } from "@angular/core";
+import { Todo } from "src/modal/Todo";
+
+
+/**
+ *  A Service class to get default
+ *   list of todo
+ */
+@Injectable()
+export class TodoService {
+
+    todos: Todo[] = [
+        { label: 'Get Up Early', done: false, priority: 1 },
+        { label: 'Do Break Fast', done: false, priority: 2 },
+    ]
+
+     getTodoList() {
+        console.log("Get ToDo List")
+        return this.todos;
+    }
+}

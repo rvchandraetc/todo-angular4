@@ -1,0 +1,33 @@
+<div class="cust_loader-bg" *ngIf="isLoading" style="z-index: 9999;">
+    <div class="cust_loader"></div>
+</div>
+<div class="blur-bg">
+  <div style="text-align:center">
+    <h1>
+      Welcome to {{ title }}!
+    </h1>
+  </div>
+</div>
+
+<div style="margin: 10px auto 0;padding: 20px 5%;">
+    <label>Todo:</label>
+    <input type="text" #newTodo placeholder="enter to do">
+    <button (click)="addToDo(newTodo.value) ; newTodo.value=''" class="btn add">Add</button>
+    <br>
+    <table>
+        <tr>
+          <th><label>Label</label></th>
+          <th><label>Priority</label></th>
+          <th><label>Done</label></th>
+          <th><label>Action</label></th>
+        </tr>
+      
+        <tr *ngFor="let todo of todos">
+          <td>{{todo.label}}</td>
+          <td>{{todo.priority}}</td>
+          <td>{{todo.done ? '&#10003;' : '&#10005;'}}</td>
+          <td ><button (click)="deleteTodo(todo)" class="btn del">Delete</button></td>
+        </tr>
+      
+      </table>
+</div>
