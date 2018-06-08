@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # TodoApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.7.
@@ -25,3 +26,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+=======
+# todo-angular4
+Todo app with angular 4 
+>>>>>>> c5c5a3ca4abb06f08e1d9a4afa9359bf9426b5d6
